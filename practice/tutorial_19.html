@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height,width,bordersand background</title>
+    <style>
+        #first{
+            background-color: red;/* changes para background color*/
+            height: 100px;
+            width: 245px;
+
+            /*border:6px solid green(when you have to write into single line)*/
+
+            border-width: 6px;
+            border-style: solid;/*tells the color and it is black by default*/ 
+            border-color:green ;
+            border-radius: 10px;/* curve at the corners*/
+            
+        }
+        #second{
+            background-color:green;/* changes para background color*/
+            height: 100px;
+            width: 245px;
+
+            /*border:6px solid green(when you have to write into single line)*/
+
+            border-width: 6px;
+            border-style: solid;/*tells the color and it is black by default*/ 
+            border-color:red;
+            border-radius: 10px;/* curve at the corners*/
+            
+        }
+        #third{
+           
+            height: 500px;
+            width: 1455px;
+            background-image: url('https://images.pexels.com/photos/2361952/pexels-photo-2361952.jpeg?auto=compress&cs=tinysrgb&w=600');
+            border:2px solid blue;
+            background-repeat:no-repeat ;/*after writing this the image do not repeat  otherwise it get repeated & repeat x and y will make it  will repeat in respective direction in place of no-repeat write repeat-x ||repeat-y*/
+            background-position:center center ;
+            /*various commands like top right,left,bottom right,left etc */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p id="first">This is paragraph</p>
+
+    <h2>This is  first heading</h2>
+    <p id="second">This is  first paragraph</p>
+
+    <h2>This is  second heading</h2>
+    <p id="third">This is second paragraph</p>
+    
+</body>
+</html>

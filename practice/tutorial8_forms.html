@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>This is Html Form Tutorial </h1>
+    <!-- Action is the end point where all the data of form is submited here -->
+    <form action="backend.php">
+        <!-- Input tag is the tag where user can give the input -->
+        <!-- Here we use div for new line you can use br also  -->
+
+        <label for="name">Name </label><!--id should be same as that of for-->
+        <div>
+            <!--Label is used for if we clicked on name then name box will be activated-->
+            <input type="text" name="myName" id="name" >
+        </div>
+
+        <br><!--do not use br it will be used in css-->
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myRole " id="role">
+        </div>
+        <br>
+        <!-- name is the tag where your backend  will know the tag you use  -->
+
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <br>
+       
+        <label for="date">Date</label>
+        <div>
+             <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+
+        <label for="Bonus">Bonus</label>
+        <div>    
+            <input type="number" name="myDateBonus" id ="Bonus">
+        </div>
+        <br>
+
+        <label for="Are you eligible">Are you Eligible</label>
+        <div>
+            <!--If you want that your checbox should already check then use checked after myEligiblity-->
+             <input type="checkbox" name="myEligiblity" id="Are you eligible">
+        </div>
+        <br>
+
+        <label for="Gender">Gender</label>
+        <div>
+            
+            Gender: Male<input type="radio" name="myGender">Female<input type="radio" name="myGender">
+            other<input type="radio" name="myGender">
+        </div>
+        <br>
+
+        <label for="Yourself">Write about Youself </label>
+        <div>
+           <br> <textarea name="myText"  cols="30" rows="10" id="Yourself"></textarea>
+        </div>
+        <br>
+
+        <label for="nationality">Nationality</label>
+        <div>
+            <select name="myNationality" id="nationality">
+                <option value="Ind">India</option>
+                <option value="usa">UsA</option>
+                <option value="Ger" selected>Germany</option>
+                <option value="Jap">Japan</option>
+                <!--if you want to select any specific value or nationality bydeafult then type selected after value-->
+            </select>
+        </div>
+        <br>
+        <div><!--Submit means it will go into backend and reset means it will be empty-->
+            <input type="submit" value="Submit now">
+            <input type="Reset" value="Reset now">
+        </div>
+
+    </form>
+</body>
+
+</html>
